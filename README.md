@@ -1,93 +1,156 @@
-# CSCI 5709 Grp-10
+# Nomadic
 
+**Nomadic** is a platform that allows users to explore and book various travel packages and share their travel experiences through blog posts. Whether you're an adventurer, leisure traveler, or cultural explorer, Nomadic offers a user-friendly experience to plan your perfect trip while connecting with a community of like-minded travelers.
 
+## Setup and Installation
 
-## Getting started
+### Prerequisites
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+Before you begin, ensure you have the following installed:
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+- [NodeJS](https://nodejs.org/en) `v16.x`
+- [npm](https://www.npmjs.com/) `v9.x`
+  OR
+- [yarn](https://www.npmjs.com/) `v1.x`
 
-## Add your files
+## Getting Started
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
+### Languages and Frameworks Used
 
 ```
-cd existing_repo
-git remote add origin https://git.cs.dal.ca/snehp/csci-5709-grp-10.git
-git branch -M main
-git push -uf origin main
+1. React
+2. Node and npm
+3. Typescript
 ```
 
-## Integrate with your tools
+```
+Libraries Used
+1) Material UI
+2) Tailwind css
+3) Chakra UI
+4) Axios
+5) react-hook-form
+```
 
-- [ ] [Set up project integrations](https://git.cs.dal.ca/snehp/csci-5709-grp-10/-/settings/integrations)
+```
+Database
+1) Postgres
+```
 
-## Collaborate with your team
+### Installation steps
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+Follow these steps to set up and run the project locally.
 
-## Test and Deploy
+#### 1. Clone the Repository
 
-Use the built-in continuous integration in GitLab.
+Clone with HTTPS:
 
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+```bash
+ git clone https://github.com/meer1616/nomadic.git
+```
 
-***
+OR
 
-# Editing this README
+Clone with SSH:
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
+```bash
+git clone git@github.com:meer1616/nomadic.git
+```
 
-## Suggestions for a good README
+### Installation for Frontend
 
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+#### 1. Navigate to the frontend directory
 
-## Name
-Choose a self-explaining name for your project.
+```bash
+cd nomadic/frontend
+```
 
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+#### 2. Install required dependencies
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+```bash
+npm install
+```
 
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+OR
 
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+```bash
+yarn
+```
 
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+#### 3. Run the project
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+```bash
+npm run dev
+```
 
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+Open your web browser and navigate to http://localhost:5173.
 
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
+### Installation for Backend
 
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
+#### 1. open another terminal
 
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
+```bash
+cd nomadic/backend
+```
 
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
+#### 2. Create .env file and add these fields with its value
 
-## License
-For open source projects, say how it is licensed.
+```bash
+DATABASE_URL=
+JWT_SECRET =
+MAIL_USERNAME =
+MAIL_PASSWORD =
+MAIL_HOST=
+```
 
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+#### 3. Install dependencies
+
+```bash
+npm install
+```
+
+OR
+
+```bash
+yarn
+```
+
+#### 4. Start the backend development server
+
+```bash
+npm run dev
+```
+
+OR
+
+```bash
+yarn dev
+```
+
+- Server will start on [http://localhost:8000](http://localhost:8000).
+
+## Built With
+
+- [Node.js](https://nodejs.org/en) - Node.js is a free, open-source, cross-platform JavaScript runtime environment that lets developers create servers, web apps, command line tools and scripts.
+
+- [React.js](https://react.dev/) - React.js is a popular JavaScript library for building user interfaces.
+
+## External Dependencies
+
+- [express](https://www.npmjs.com/package/express) - npm package that provide small, robust tooling for HTTP servers, making it a great solution for single page applications, websites, hybrids, or public HTTP APIs.
+- [Material UI](https://material-ui.com/) - Material UI is a popular React UI framework that provides pre-built components and styling for creating modern and responsive user interfaces.
+- [Chakra UI](https://chakra-ui.com/) - Chakra UI is a simple and modular component library for building React applications.
+- [Axios](https://www.npmjs.com/package/axios) Axios is JS library used for making HTTP requests from the browser or Node.js. It provides an easy-to-use API and supports features like request and response interception, automatic JSON parsing, and error handling.
+- [React hook form](https://react-hook-form.com/) React Hook Form is a lightweight library for managing form state in React. It provides an intuitive API for handling form validation, error messages, and form submission.
+- [Prisma ORM](https://www.prisma.io/) - Prisma is an open-source database toolkit that provides an Object-Relational Mapping (ORM) layer for Node.js and TypeScript.
+- [Postgres](https://www.postgresql.org/) - Postgres is a powerful open-source relational database management system.
+
+## Tools and Technology used
+
+- Vite - Javascirpt bundler to build frontend artifacts [1].
+- Netlify - Hosting frontend artifacts [2].
+- Docker - Container technology to ship backend images [3].
+- AWS RDS - Managed database service [4]
+- GCP Cloud Run - Deploying backend docker containers [5].
+- GCP Cloud Build - Running backed CI CD pipeline [6].
+- GCP Artifact Registry - To store backend docker images [7].
